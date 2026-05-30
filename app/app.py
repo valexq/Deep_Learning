@@ -6,7 +6,7 @@ import tensorflow as tf
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Reconocimiento de Actividades Humanas",
+    page_title="Reconocimiento de actividades humanas",
     page_icon="🏃",
     layout="wide"
 )
@@ -79,9 +79,7 @@ def cargar_metricas():
 
 
 # Título principal
-st.title("🏃 Sistema de Reconocimiento de Actividades Humanas")
-st.markdown("**Proyecto Final - Introducción al Aprendizaje Profundo**")
-st.markdown("---")
+st.title("🏃 Sistema de reconocimiento de actividades humanas")
 
 # Barra lateral
 st.sidebar.header("Configuración")
@@ -130,7 +128,7 @@ with tab1:
             st.markdown(f"### {emoji_real} {actividad_real}")
 
         with col2:
-            st.subheader("Predicción del Modelo")
+            st.subheader("Predicción del modelo")
 
             modelo = cargar_modelo(modelo_seleccionado)
             if modelo is None:
@@ -160,7 +158,7 @@ with tab1:
 
         # Gráfico de probabilidades
         if modelo is not None and X_seq is not None:
-            st.subheader("Probabilidades por Actividad")
+            st.subheader("Probabilidades por actividad")
             import matplotlib.pyplot as plt
 
             fig, ax = plt.subplots(figsize=(10, 3))
@@ -176,7 +174,7 @@ with tab1:
 
 # ===================== TAB 2: MÉTRICAS =====================
 with tab2:
-    st.header("Comparación de Modelos")
+    st.header("Comparación de modelos")
 
     metricas = cargar_metricas()
 
@@ -204,7 +202,7 @@ with tab2:
         st.dataframe(df.set_index('Modelo'), use_container_width=True)
 
         # Gráfico de barras
-        st.subheader("Accuracy por Modelo")
+        st.subheader("Accuracy por modelo")
         import matplotlib.pyplot as plt
 
         nombres_mod = [d['modelo'] for d in metricas.values()]
@@ -221,7 +219,7 @@ with tab2:
 
         ax.set_ylabel('Accuracy')
         ax.set_ylim(0.7, 1.05)
-        ax.set_title('Accuracy en Conjunto de Prueba')
+        ax.set_title('Accuracy en conjunto de prueba')
         ax.grid(axis='y', alpha=0.3)
         plt.tight_layout()
         st.pyplot(fig)
@@ -229,7 +227,7 @@ with tab2:
 
 # ===================== TAB 3: INFORMACIÓN =====================
 with tab3:
-    st.header("Información del Proyecto")
+    st.header("Información del proyecto")
 
     st.markdown("""
     ### Descripción del Problema
