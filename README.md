@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# Deep_Learning
-=======
-# Sistema de Reconocimiento de Actividades Humanas (HAR)
+# Sistema de reconocimiento de actividades humanas (HAR)
 
 ## Integrantes:
 - Laura Escobar Rojo
 - Vanessa Alfaro
 
-## Descripción del Problema
+## Descripción del problema
 
 Diseñar un sistema inteligente capaz de reconocer automáticamente actividades humanas realizadas por una persona utilizando datos provenientes de sensores móviles (acelerómetro y giroscopio), con el fin de apoyar procesos de monitoreo, salud, deporte y asistencia inteligente.
 
@@ -144,4 +141,4 @@ Todos los modelos se evalúan con:
 3. Evaluar técnicas de data augmentation para señales de sensores.
 4. Extender el sistema a más actividades con datasets más grandes.
 5. Desplegar el modelo en un dispositivo móvil para inferencia en tiempo real.
->>>>>>> bd6b5b3 (Second commit)
+
