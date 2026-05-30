@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Deep_Learning
+=======
 # Sistema de Reconocimiento de Actividades Humanas (HAR)
 
 ## Integrantes:
@@ -141,3 +144,4 @@ Todos los modelos se evalúan con:
 3. Evaluar técnicas de data augmentation para señales de sensores.
 4. Extender el sistema a más actividades con datasets más grandes.
 5. Desplegar el modelo en un dispositivo móvil para inferencia en tiempo real.
+>>>>>>> bd6b5b3 (Second commit)
